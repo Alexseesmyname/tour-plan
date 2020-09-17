@@ -506,10 +506,10 @@ body {
   .container .navbar-top .search__input {
     width: 340px;
   }
-  .container .nav {
+  .container .navbar-menu {
     padding: 22px 0;
   }
-  .container .nav__link {
+  .container .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
