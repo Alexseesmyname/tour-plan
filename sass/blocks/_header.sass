@@ -7,8 +7,9 @@
         align-items: center
         padding: 40px 0
         .logo
+            width: 177px
             &__image
-                max-width: 177px
+                max-width: 100%
         .search 
             display: flex
             position: relative
@@ -50,9 +51,11 @@
                 margin-left: 18px
             &:hover
                 text-decoration: underline
-.navbar-menu
+        &__menu-button
+            display: none
+.navbar-bottom
     background-color: #0A223D
-    .nav
+    .navbar-menu
         padding: 31px 0
         &__list
             display: flex
