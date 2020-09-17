@@ -355,7 +355,7 @@ body {
   margin: 0 auto;
 }
 
-.container .header-top {
+.container .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +368,7 @@ body {
   padding: 40px 0;
 }
 
-.container .header-top .search {
+.container .navbar-top .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,9 +376,10 @@ body {
   border-radius: 6px;
   overflow: hidden;
   height: 41px;
+  margin-left: -265px;
 }
 
-.container .header-top .search__input {
+.container .navbar-top .search__input {
   width: 350px;
   height: 100%;
   padding: 0 75px 0 23px;
@@ -389,7 +390,7 @@ body {
   color: #333333;
 }
 
-.container .header-top .search__button {
+.container .navbar-top .search__button {
   position: absolute;
   width: 65px;
   height: 100%;
@@ -400,7 +401,7 @@ body {
   cursor: pointer;
 }
 
-.container .header-top .user {
+.container .navbar-top .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,7 +414,7 @@ body {
   color: #333333;
 }
 
-.container .header-top .user__avatar {
+.container .navbar-top .user__avatar {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
@@ -421,23 +422,23 @@ body {
   border-radius: 50%;
 }
 
-.container .header-top .user__name {
+.container .navbar-top .user__name {
   margin-left: 18px;
 }
 
-.container .header-top .user:hover {
+.container .navbar-top .user:hover {
   text-decoration: underline;
 }
 
-.header-menu {
+.navbar-menu {
   background-color: #0A223D;
 }
 
-.header-menu .nav {
+.navbar-menu .nav {
   padding: 31px 0;
 }
 
-.header-menu .nav__list {
+.navbar-menu .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,11 +449,11 @@ body {
   padding: 0;
 }
 
-.header-menu .nav__item {
+.navbar-menu .nav__item {
   list-style: none;
 }
 
-.header-menu .nav__link {
+.navbar-menu .nav__link {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -461,7 +462,7 @@ body {
   text-decoration: none;
 }
 
-.header-menu .nav__link:hover {
+.navbar-menu .nav__link:hover {
   text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
