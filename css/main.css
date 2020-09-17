@@ -509,7 +509,7 @@ body {
   .navbar-bottom .container .navbar-menu {
     padding: 22px 0;
   }
-  .navbar-bottom .container__link {
+  .navbar-bottom .container .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
   }
