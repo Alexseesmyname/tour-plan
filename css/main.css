@@ -554,6 +554,11 @@ body {
 .hotel-info__text .stars .star {
   width: 8px;
   height: 8px;
+  margin-right: 2px;
+}
+
+.hotel-info__text .stars .star:last-child {
+  margin: 0;
 }
 
 .hotel-info__text .name {
