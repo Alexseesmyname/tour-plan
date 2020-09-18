@@ -414,6 +414,12 @@ body {
   cursor: pointer;
 }
 
+.navbar-top .search__icon {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}
+
 .navbar-top .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,6 +549,11 @@ body {
 .hotel-info__text .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+
+.hotel-info__text .stars .star {
+  width: 8px;
+  height: 8px;
 }
 
 .hotel-info__text .name {
