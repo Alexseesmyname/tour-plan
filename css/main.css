@@ -642,7 +642,7 @@ body {
   border-radius: 8px;
 }
 
-.hotel-grid .slider .swiper-container:after {
+.hotel-grid .slider .swiper-container .swiper-slide:after {
   content: "";
   position: absolute;
   z-index: 1;

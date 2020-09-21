@@ -10,4 +10,5 @@ var mySwiper = new Swiper(".swiper-container", {
   keyboard: {
     enabled: true,
   },
+  effect: "fade",
 });
