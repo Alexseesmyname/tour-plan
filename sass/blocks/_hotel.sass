@@ -65,3 +65,48 @@
                 &:not(:last-child)               
                     &::after
                         content: "/"
+    &-grid
+        .slider
+            max-width: 728px
+            .swiper-container
+                position: relative 
+                width: 100%
+                height: 450px
+                border-radius: 8px
+                &:after
+                    content: ""
+                    position: absolute
+                    z-index: 1
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+                .swiper-slide
+                    .slide
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                .slider-button
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    z-index: 99
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 30px
+                    height: 30px
+                    border: none
+                    cursor: pointer
+                    background-color: transparent
+                    &__prev
+                        left: 18px
+                    &__next
+                        right: 18px
+                    &__icon
+                        &_prev, &_next
+                            width: 10px
+                            height: 18px
+                            fill: $color-w
+                            opacity: 0.8
