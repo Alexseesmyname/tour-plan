@@ -549,6 +549,7 @@ body {
 .hotel-info__text .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  font-size: 0;
 }
 
 .hotel-info__text .stars .star {
@@ -613,8 +614,21 @@ body {
 
 .hotel-rating__counter {
   font-weight: 700;
+  font-size: 0;
+}
+
+.hotel-rating__counter__value {
   font-size: 14px;
   line-height: 18px;
+}
+
+.hotel-rating__counter__max {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.hotel-rating__counter .value:not(:last-child)::after {
+  content: "/";
 }
 
 @media (max-width: 1200px) {

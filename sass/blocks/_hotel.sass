@@ -13,6 +13,7 @@
             padding: 21px 0
             .stars
                 flex-basis: 100%
+                font-size: 0
                 .star
                     width: 8px
                     height: 8px
@@ -53,5 +54,14 @@
             line-height: 10px
         &__counter
             font-weight: 700
-            font-size: 14px
-            line-height: 18px
+            font-size: 0
+            &__value
+                font-size: 14px
+                line-height: 18px
+            &__max
+                font-size: 10px
+                line-height: 13px
+            .value
+                &:not(:last-child)               
+                    &::after
+                        content: "/"
