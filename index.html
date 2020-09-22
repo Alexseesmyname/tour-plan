@@ -10,6 +10,11 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=35d05983-f5d8-4fa1-b453-b2e3d0cffc8e&lang=ru_RU"
+      type="text/javascript"
+      defer
+    ></script>
     <script src="js/swiper-bundle.min.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
@@ -234,17 +239,7 @@
               </a>
             </div>
             <!-- /.booking-card -->
-            <div class="map">
-              <iframe
-                class="map__item"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1922457.0014589757!2d28.773369545541513!3d40.53542274090733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe964200b7b8e87ea!2sHilton%20Istanbul%20Bosphorus!5e0!3m2!1suk!2sua!4v1600763267120!5m2!1suk!2sua"
-                width="100%"
-                height="210"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
-            </div>
+            <div class="map" id="map"></div>
             <!-- /.map -->
           </div>
           <!-- /.info -->

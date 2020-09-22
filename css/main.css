@@ -844,12 +844,7 @@ body {
 
 .hotel-wrapper .map {
   width: 350px;
-}
-
-.hotel-wrapper .map__item {
-  border-radius: 10px;
-  border: 0;
-  background: none;
+  height: 210px;
 }
 
 @media (max-width: 1200px) {
