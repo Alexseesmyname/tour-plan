@@ -845,6 +845,7 @@ body {
 .hotel-wrapper .map {
   width: 350px;
   height: 210px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
