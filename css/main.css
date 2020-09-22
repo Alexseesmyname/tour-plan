@@ -840,6 +840,11 @@ body {
   background-color: #ec1f46;
 }
 
+.hotel-grid .hotel-wrapper .map__item {
+  border-radius: 10px;
+  border: 0;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 90%;
