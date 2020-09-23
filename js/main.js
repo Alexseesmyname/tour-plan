@@ -25,9 +25,6 @@ function init() {
           type: "Point",
           coordinates: [41.013421, 28.978255],
         },
-        properties: {
-          iconContent: "",
-        },
       },
       {
         preset: "islands#redIcon",
