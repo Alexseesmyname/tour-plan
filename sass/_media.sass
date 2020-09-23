@@ -44,7 +44,23 @@
         &__wrapper
             width: 700px
             padding: 92px 0 
-
+    .reviews
+        &__title
+            margin: 0 0 50px 0
+        &-slider
+            &__item
+                width: 579px
+                &::before
+                    display: none
+                &::after
+                    display: none
+            &__text
+                max-width: 455px
+            &__button
+                &_prev
+                    left: 0
+                &_next
+                    right: 0
 @media ( max-width:759px)
     .container
         width: 576px
@@ -109,6 +125,24 @@
             height: 320px
             margin-bottom: 37px
             padding: 76px 20px 83px 
+    .reviews
+        &__title
+            margin: 0 0 50px 0
+            font-size: 29px
+        &-slider
+            &__item
+                width: 100%
+                &::before
+                    display: none
+                &::after
+                    display: none
+            &__text
+                max-width: 455px
+            &__button
+                &_prev
+                    left: 0
+                &_next
+                    right: 0
             
 @media ( max-width: 619px )
     .container
@@ -182,3 +216,25 @@
         .subscribe
             &__input
                 width: 280px
+    .reviews
+        padding: 40px 0 50px 0
+        &__title
+            margin: 0 0 42px 0
+            font-size: 18px
+        &-slider
+            &__item
+                width: 100%
+                padding: 0 31px 36px
+                &::before
+                    display: none
+                &::after
+                    display: none
+            &__text
+                max-width: 455px
+            &__button
+                &_prev
+                    top: 45px
+                    left: 19%
+                &_next
+                    top: 45px
+                    right: 19%
