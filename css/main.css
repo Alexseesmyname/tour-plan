@@ -1101,7 +1101,7 @@ body {
   .container .navbar-top .logo {
     width: 133px;
   }
-  .container .hotel__slider {
+  .hotel__slider {
     width: 590px;
   }
 }
@@ -1142,7 +1142,7 @@ body {
             flex-direction: column;
   }
   .hotel__slider {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 30px;
   }
   .hotel-wrapper {
