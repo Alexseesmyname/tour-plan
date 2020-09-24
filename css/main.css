@@ -1260,6 +1260,7 @@ body {
   .activities .activity {
     -ms-flex-preferred-size: 48.5%;
         flex-basis: 48.5%;
+    height: 255px;
     margin-bottom: 20px;
   }
   .activities .activity__text {
@@ -1403,6 +1404,7 @@ body {
   .activities .activity {
     -ms-flex-preferred-size: 48.5%;
         flex-basis: 48.5%;
+    height: 255px;
     margin-bottom: 20px;
   }
   .activities .activity__text {
