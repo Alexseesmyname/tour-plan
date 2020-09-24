@@ -23,3 +23,7 @@ var reviewSlider = new Swiper(".reviews-slider", {
     prevEl: ".reviews-slider__button_prev",
   },
 });
+
+$(".newsletter").parallax({
+  imageSrc: "./img/3.newsletter/background-img.jpg",
+});
