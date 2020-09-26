@@ -896,6 +896,20 @@ body {
       grid-template-columns: repeat(2, 50%);
 }
 
+.packages__offer {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 26px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #ec1f46;
+  border-radius: 0 4px 4px 0;
+}
+
 .packages .big-item__wrapper {
   width: 100%;
   height: 500px;
@@ -939,6 +953,7 @@ body {
 }
 
 .packages__wrapper {
+  position: relative;
   width: 100%;
   height: 250px;
 }
@@ -1758,6 +1773,9 @@ body {
   .packages__content {
     padding: 10px 15px;
   }
+  .packages__wrapper {
+    height: 100%;
+  }
   .packages .content__title {
     font-size: 16px;
     line-height: 20px;
@@ -1767,6 +1785,9 @@ body {
     font-size: 16px;
     line-height: 20px;
     margin: 0 0 15px;
+  }
+  .packages .big-item__wrapper {
+    height: 100%;
   }
   .packages .big-item__content {
     padding: 10px 15px;
