@@ -58,7 +58,7 @@
     &__content
         display: grid
         grid-template-rows: repeat(4, max-content)
-        padding: 28px 21px 23px 32px
+        padding: 30px 21px 25px 32px
         background-color: #0A223D
     .content
         color: $color-w
@@ -68,14 +68,14 @@
             font-size: 18px
             line-height: 23px
         &__price
-            display: grid
-            grid-template-columns: repeat(2, 50%)
+            display: flex
+            justify-content: space-between
+            align-items: center
             &_new
                 font-weight: bold
                 font-size: 24px
                 line-height: 30px
             &_old
-                margin-bottom: 5px
                 font-size: 14px
                 line-height: 18px
                 text-decoration: line-through

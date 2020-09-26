@@ -956,7 +956,7 @@ body {
   -ms-grid-rows: (max-content)[4];
       grid-template-rows: repeat(4, -webkit-max-content);
       grid-template-rows: repeat(4, max-content);
-  padding: 28px 21px 23px 32px;
+  padding: 30px 21px 25px 32px;
   background-color: #0A223D;
 }
 
@@ -972,10 +972,15 @@ body {
 }
 
 .packages .content__price {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .packages .content__price_new {
@@ -985,7 +990,6 @@ body {
 }
 
 .packages .content__price_old {
-  margin-bottom: 5px;
   font-size: 14px;
   line-height: 18px;
   text-decoration: line-through;
