@@ -494,7 +494,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 18px 0;
+  padding: 19px 0 18px;
   font-size: 10px;
   line-height: 13px;
   color: #333333;
@@ -763,6 +763,11 @@ body {
 .hotel-wrapper .booking-card .price__txt {
   font-size: 10px;
   line-height: 14px;
+}
+
+.hotel-wrapper .booking-card .price__txt_down {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .hotel-wrapper .booking-card .price__value {
@@ -1316,6 +1321,20 @@ body {
   position: relative;
   width: 255px;
   height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.activities .activity::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
 }
 
 .activities .activity__img {
@@ -1323,19 +1342,19 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 6px;
 }
 
 .activities .activity__text {
   position: absolute;
+  z-index: 99;
   left: 26px;
-  bottom: 24px;
+  bottom: 30px;
   color: #ffffff;
 }
 
 .activities .activity__descr {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 23px;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -1383,7 +1402,7 @@ body {
     width: 133px;
   }
   .container .navbar-top .search {
-    margin-left: 8%;
+    margin-left: 7%;
   }
   .container .navbar-top .search__input {
     width: 340px;
@@ -1668,7 +1687,7 @@ body {
     width: 90%;
   }
   .container .navbar-top {
-    padding: 28px 0;
+    padding: 27px 0;
   }
   .container .navbar-top .logo {
     width: 100px;
@@ -1731,6 +1750,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 18px;
   }
   .hotel__slider {
     max-width: 100%;
@@ -1753,7 +1773,7 @@ body {
   }
   .hotel-wrapper .map {
     width: 100%;
-    height: 179px;
+    height: 172px;
   }
   .packages__grid {
     -ms-grid-rows: (420px)[5];
@@ -1839,11 +1859,11 @@ body {
   }
   .reviews-slider__button_prev {
     top: 45px;
-    left: 19%;
+    left: 17%;
   }
   .reviews-slider__button_next {
     top: 45px;
-    right: 19%;
+    right: 17%;
   }
   .activities {
     padding: 40px 0 60px;
