@@ -1400,6 +1400,15 @@ body {
   .activities .activity__text {
     left: 18px;
   }
+  .packages .big-item__title {
+    margin-bottom: 24px;
+  }
+  .packages .big-item__description {
+    margin-bottom: 30px;
+  }
+  .packages .big-item__properties {
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1466,6 +1475,15 @@ body {
     margin-bottom: 50px;
     font-size: 30px;
     line-height: 38px;
+  }
+  .packages .big-item__title {
+    margin-bottom: 30px;
+  }
+  .packages .big-item__description {
+    margin-bottom: 40px;
+  }
+  .packages .big-item__properties {
+    margin-bottom: 40px;
   }
   .newsletter__wrapper {
     width: 700px;
