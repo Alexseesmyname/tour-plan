@@ -39,6 +39,8 @@
         &__wrapper
             width: 100%
             height: 500px
+        &__img
+            object-position: center top
         &__content
             grid-template-rows: repeat(6, max-content)
             padding: 46px 21px 30px 43px
@@ -53,13 +55,13 @@
                     &:last-child
                         margin-right: 0
         &__title 
-            margin: 0 0 27px
+            margin: 0 0 29px
         &__description
-            margin-bottom: 34px
+            margin-bottom: 40px
             font-size: 14px
             line-height: 22px
         &__properties
-            margin: 0 0 37px
+            margin: 0 0 40px
     &__wrapper
         position: relative
         width: 100%
@@ -73,10 +75,14 @@
         grid-template-rows: repeat(4, max-content)
         padding: 30px 21px 25px 32px
         background-color: #0A223D
+    .little-item
+        &__title
+            margin: 0 0 23px
+        &__properties
+            margin-bottom: 24px
     .content
         color: $color-w
         &__title
-            margin: 0 0 23px
             font-weight: 700
             font-size: 18px
             line-height: 23px
@@ -103,7 +109,6 @@
             border-radius: 4px
             background-color: $primary
     .properties
-        margin-bottom: 24px
         font-size: 0
         &__item
             margin-bottom: 11px
