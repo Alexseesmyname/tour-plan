@@ -2354,9 +2354,9 @@ body {
     grid-row: 1/2;
   }
   .footer-top__categories {
-    -ms-grid-row: 3;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 3/4;
+    grid-row: 5/6;
   }
   .footer-top__additional-info {
     -ms-grid-row: 4;
@@ -2382,9 +2382,9 @@ body {
         align-content: center;
   }
   .footer-top__legal-info {
-    -ms-grid-row: 5;
+    -ms-grid-row: 3;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 3/4;
   }
   .footer-contact {
     -ms-grid-columns: 100%;
