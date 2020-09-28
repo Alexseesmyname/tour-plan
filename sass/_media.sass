@@ -104,7 +104,48 @@
             margin-bottom: 20px
             &__text
                 left: 27px
-
+    .footer
+        padding: 73px 0 33px
+        &-top
+            grid-template-columns: 1fr 260px 202px
+            grid-template-rows: repeat(2, max-content)
+            column-gap: 38px
+            row-gap: 48px
+            margin-bottom: 55px
+            &__logo-wrapper
+                grid-row: 1/2
+            &__logo
+                width: 94px
+                height: 110px
+            &__categories
+                grid-row: 2/3
+            &__additional-info
+                grid-row: 2/3
+            &__social
+                grid-column: 2/4
+                grid-row: 1/2
+                display: grid
+                grid-template-columns: 40% 60% 
+                column-gap: 16px
+                align-content: center
+            &__title
+                &_nm
+                    width: 200px
+            &__legal-info
+                grid-row: 2/3
+        &-contact
+            grid-template-columns: 77%
+            grid-template-rows: repeat(2, max-content)
+            row-gap: 39px
+            margin-bottom: 52px
+            &__title
+                margin: 0 0 24px
+            .form-title
+                margin-bottom: 34px
+        &-bottom
+            grid-template-columns: 283px 1fr 1fr
+            &__link-wrapper
+                grid-column: 1/2
 @media ( max-width:759px)
     .container
         width: 576px
@@ -225,7 +266,14 @@
             height: 255px
             margin-bottom: 20px
             &__text
-                left: 20px    
+                left: 20px 
+    .footer
+        &-top
+            grid-template-columns: 1fr 1fr 1fr
+            &__social
+                grid-column: 2/4
+                display: grid
+                grid-template-columns: repeat(2, 1fr)  
 
 @media ( max-width: 619px )
     .container
@@ -368,3 +416,61 @@
                 margin-bottom: 0
             &__text
                 left: 26px
+    .footer
+        &-top
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(5, max-content)
+            row-gap: 30px
+            margin-bottom: 40px
+            &__logo-wrapper
+                grid-row: 1/2
+            &__categories
+                grid-row: 3/4
+            &__additional-info
+                grid-row: 4/5
+            &__social
+                grid-column: 1/2
+                grid-row: 2/3
+                display: grid
+                grid-template-columns: 1fr
+                grid-template-rows: repeat(2, max-content)
+                row-gap: 30px
+                align-content: center
+            &__legal-info
+                grid-row: 5/6
+        &-contact
+            grid-template-columns: 100%
+            margin-bottom: 30px
+            .form
+                grid-template-columns: 100%
+                grid-template-rows: repeat(4, 100%)
+                &__input
+                    grid-column: 1/2
+                    &_name
+                        grid-row: 1/2
+                    &_number
+                        grid-row: 2/3
+                &__textarea
+                    grid-column: 1/2
+                    grid-row: 3/4
+                    margin-bottom: 0
+                &__button-wrapper
+                    grid-column: 1/2
+                    grid-row: 4/5
+                    display: grid
+                    grid-template-columns: 1fr
+                    grid-template-rows: repeat(2, max-content)
+                    row-gap: 15px
+                &__button
+                    grid-row: 2/3
+                    width: 160px
+        &-bottom
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(2,1fr)
+            row-gap: 10px
+            &__link-wrapper
+                grid-row: 1/2
+            &__logo-wrapper
+                grid-column: 1/2
+                grid-row: 2/3
+                justify-content: start
