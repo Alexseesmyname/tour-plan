@@ -2391,6 +2391,9 @@ body {
         grid-template-columns: 100%;
     margin-bottom: 30px;
   }
+  .footer-contact .details-title {
+    margin-top: 0;
+  }
   .footer-contact .form {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
