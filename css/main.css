@@ -2389,10 +2389,13 @@ body {
   .footer-contact {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .footer-contact .details-title {
     margin-top: 0;
+  }
+  .footer-contact .form-title {
+    margin-bottom: 15px;
   }
   .footer-contact .form {
     -ms-grid-columns: 100%;
