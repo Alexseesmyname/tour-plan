@@ -27,3 +27,11 @@ var reviewSlider = new Swiper(".reviews-slider", {
 $(".newsletter").parallax({
   imageSrc: "./img/3.newsletter/background-img.jpg",
 });
+
+var menuButton = document.querySelector(".menu-button");
+
+menuButton.addEventListener("click", function () {
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom_active");
+});
