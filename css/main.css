@@ -2820,6 +2820,7 @@ body {
   .modal__dialog {
     width: 100%;
     padding: 33px 33px;
+    overflow: auto;
   }
   .modal__button-wrapper {
     -webkit-box-orient: vertical;
