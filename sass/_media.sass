@@ -147,6 +147,11 @@
             grid-template-columns: 283px 1fr 1fr
             &__link-wrapper
                 grid-column: 1/2
+    .modal
+        &__dialog
+            width: 400px
+            padding: 33px 66px
+
 @media ( max-width:759px)
     body
         padding-top: 78px
@@ -629,3 +634,14 @@
                 grid-column: 1/2
                 grid-row: 2/3
                 justify-content: start
+    .modal
+        &__dialog
+            width: 100%
+            padding: 33px 33px
+        &__button-wrapper
+            flex-direction: column-reverse
+            align-items: start
+        &__txt
+            margin-bottom: 15px
+        &__button
+            width: 100%
