@@ -1725,7 +1725,7 @@ body {
 .modal__dialog {
   position: fixed;
   z-index: 101;
-  top: 58%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2087,7 +2087,6 @@ body {
   .modal__dialog {
     width: 80%;
     height: 320px;
-    top: 50%;
   }
   .modal__form {
     display: -ms-grid;
@@ -2446,7 +2445,6 @@ body {
   .modal__dialog {
     width: 90%;
     height: 320px;
-    top: 50%;
   }
   .modal__form {
     display: -ms-grid;
