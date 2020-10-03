@@ -346,6 +346,10 @@ template {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   background-color: #f5fafe;
@@ -1769,6 +1773,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: auto;
 }
 
 .modal__title {
@@ -1825,6 +1830,7 @@ body {
   border-radius: 4px;
   color: #ffffff;
   background-color: #ec1f46;
+  cursor: pointer;
 }
 
 .modal__txt {
@@ -2820,7 +2826,6 @@ body {
   .modal__dialog {
     width: 100%;
     padding: 33px 33px;
-    overflow: auto;
   }
   .modal__button-wrapper {
     -webkit-box-orient: vertical;

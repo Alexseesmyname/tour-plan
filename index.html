@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
@@ -21,10 +23,11 @@
   </head>
 
   <body>
+    <a id="main"></a>
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#main" class="logo">
             <img
               src="img/1.header/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -828,11 +831,13 @@
       <div class="container">
         <div class="footer-top">
           <div class="footer-top__logo-wrapper">
-            <img
-              src="img/7.footer/vertical-logo.svg"
-              alt="Logo: Best Tour Plan"
-              class="footer-top__logo"
-            />
+            <a href="#main">
+              <img
+                src="img/7.footer/vertical-logo.svg"
+                alt="Logo: Best Tour Plan"
+                class="footer-top__logo"
+              />
+            </a>
           </div>
           <!-- /.footer-top_logo-wrapper -->
           <div class="footer-top__categories">
