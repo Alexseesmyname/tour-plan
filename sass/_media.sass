@@ -129,6 +129,11 @@
                 grid-template-columns: 40% 60% 
                 column-gap: 16px
                 align-content: center
+                margin-left: -10px
+                margin-bottom: -5px
+            &__links
+                margin-left: -10px
+                margin-bottom: -5px
             &__title
                 &_nm
                     width: 200px
@@ -377,10 +382,16 @@
     .footer
         &-top
             grid-template-columns: 1fr 1fr 1fr
+            &__logo-wrapper
             &__social
                 grid-column: 2/4
                 display: grid
-                grid-template-columns: repeat(2, 1fr) 
+                grid-template-columns: repeat(2, 1fr)
+                margin-bottom: 0
+                margin-left: 0
+            &__links
+                margin-bottom: 0
+                margin-left: 0 
 @media ( max-width: 759px ) and (orientation: landscape)
     .modal
         &__dialog

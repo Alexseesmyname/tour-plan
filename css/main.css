@@ -1608,6 +1608,7 @@ body {
   padding: 18px 23px;
   border-radius: 4px;
   border: 0;
+  color: #333333;
 }
 
 .footer-contact .form__textarea {
@@ -1620,6 +1621,7 @@ body {
   padding: 18px 23px;
   border-radius: 4px;
   border: 0;
+  color: #333333;
 }
 
 .footer-contact .form__button-wrapper {
@@ -2036,6 +2038,12 @@ body {
             column-gap: 16px;
     -ms-flex-line-pack: center;
         align-content: center;
+    margin-left: -10px;
+    margin-bottom: -5px;
+  }
+  .footer-top__links {
+    margin-left: -10px;
+    margin-bottom: -5px;
   }
   .footer-top__title_nm {
     width: 200px;
@@ -2423,6 +2431,12 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .footer-top__links {
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
