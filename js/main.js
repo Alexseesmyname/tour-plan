@@ -39,7 +39,6 @@ $(document).ready(function () {
 
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
-  var body = $("body");
   var modalButton = $('[data-toggle = "modal"]');
   var modalClose = $(".modal__close");
 
