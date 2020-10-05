@@ -61,4 +61,36 @@ $(document).ready(function () {
       closeModal(event);
     }
   });
+
+  //Обработка форм//
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least 2 letters",
+        },
+        email: {
+          required: "Please enter your email",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Please enter your phone number",
+          minlength:
+            "Your phone number must be in the format +7(999) 999-99-99",
+        },
+      },
+    });
+  });
+
+  $('[type="tel"]').each(function () {
+    $(this).mask("+7(999) 999-99-99");
+  });
+  $(".modal__input-group").on("DOMNodeInserted", function () {
+    $(".modal__dialog").addClass("modal__dialog_error"),
+      $(".modal__form").addClass("modal__form_error"),
+      $(".modal__input").addClass("modal__input_error"),
+      $(".modal__textarea").addClass("modal__textarea_error");
+  });
 });
