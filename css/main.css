@@ -361,7 +361,45 @@ body {
 }
 
 .invalid {
-  color: red;
+  color: #ff0000;
+}
+
+.modal-error_name {
+  position: absolute;
+  left: 0;
+  top: 96%;
+  z-index: 102;
+}
+
+.modal-error_phone {
+  position: absolute;
+  left: 0;
+  top: 96%;
+  z-index: 102;
+}
+
+.modal-error_email {
+  position: absolute;
+  left: 0;
+  top: 96%;
+  z-index: 102;
+}
+
+.newsletter-error_email {
+  position: absolute;
+  top: 100%;
+}
+
+.footer-error_name {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.footer-error_phone {
+  position: absolute;
+  left: 0;
+  top: 100%;
 }
 
 .navbar {
@@ -1145,8 +1183,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  border-radius: 4px;
-  overflow: hidden;
   height: 55px;
 }
 
@@ -1157,6 +1193,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   border: none;
+  border-radius: 4px;
   background-color: #f5fafe;
   color: #333333;
 }
@@ -1172,6 +1209,7 @@ body {
   line-height: 15px;
   background-color: #ec1f46;
   border: 0;
+  border-radius: 0 4px 4px 0;
   color: #ffffff;
   cursor: pointer;
 }
@@ -1614,6 +1652,10 @@ body {
   margin-bottom: 35px;
 }
 
+.footer-contact__input-group {
+  position: relative;
+}
+
 .footer-contact .form {
   font-size: 12px;
   line-height: 15px;
@@ -1815,6 +1857,7 @@ body {
 
 .modal__input-group {
   width: 100%;
+  position: relative;
 }
 
 .modal__textarea {
@@ -2155,20 +2198,23 @@ body {
     top: 50%;
   }
   .modal__dialog_error {
-    height: 350px;
+    height: 340px;
   }
   .modal__form {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content;
     -webkit-column-gap: 15px;
             column-gap: 15px;
     row-gap: 15px;
   }
   .modal__form_error {
-    height: 284px;
-    row-gap: 8px;
+    height: 274px;
+    row-gap: 5px;
   }
   .modal__title {
     -ms-grid-column: 1;
@@ -2181,6 +2227,12 @@ body {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+  }
+  .modal__input_error {
+    padding: 15px 23px;
+  }
+  .modal__input-group {
+    height: 100%;
   }
   .modal__textarea {
     -ms-grid-column: 2;
@@ -2210,6 +2262,15 @@ body {
   }
   .modal__txt {
     display: none;
+  }
+  .modal-error_name {
+    top: 65%;
+  }
+  .modal-error_phone {
+    top: 65%;
+  }
+  .modal-error_email {
+    top: 60%;
   }
 }
 
@@ -2539,7 +2600,7 @@ body {
     top: 50%;
   }
   .modal__dialog_error {
-    height: 350px;
+    height: 320px;
   }
   .modal__form {
     display: -ms-grid;
@@ -2551,8 +2612,8 @@ body {
     row-gap: 15px;
   }
   .modal__form_error {
-    height: 284px;
-    row-gap: 10px;
+    height: 264px;
+    row-gap: 5px;
   }
   .modal__title {
     -ms-grid-column: 1;
@@ -2565,6 +2626,12 @@ body {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin: 0;
+  }
+  .modal__input_error {
+    padding: 15px 23px;
+  }
+  .modal__input-group {
+    height: 100%;
   }
   .modal__textarea {
     -ms-grid-column: 2;
@@ -2593,6 +2660,15 @@ body {
   }
   .invalid {
     font-size: 12px;
+  }
+  .modal-error_name {
+    top: 65%;
+  }
+  .modal-error_phone {
+    top: 65%;
+  }
+  .modal-error_email {
+    top: 60%;
   }
 }
 
@@ -3041,9 +3117,6 @@ body {
     width: 95%;
     padding: 33px 33px;
   }
-  .modal__textarea_error {
-    height: 93px;
-  }
   .modal__button-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3061,6 +3134,15 @@ body {
   }
   .invalid {
     font-size: 12px;
+  }
+  .modal-error_name {
+    top: 100%;
+  }
+  .modal-error_phone {
+    top: 100%;
+  }
+  .modal-error_email {
+    top: 100%;
   }
 }
 
@@ -3083,8 +3165,8 @@ body {
     row-gap: 15px;
   }
   .modal__form_error {
-    height: 254px;
-    row-gap: 7px;
+    height: 264px;
+    row-gap: 5px;
   }
   .modal__title {
     -ms-grid-column: 1;
@@ -3101,6 +3183,9 @@ body {
   }
   .modal__input_error {
     padding: 15px 23px;
+  }
+  .modal__input-group {
+    height: 100%;
   }
   .modal__textarea {
     -ms-grid-column: 2;
@@ -3126,6 +3211,15 @@ body {
   }
   .modal__txt {
     display: none;
+  }
+  .modal-error_name {
+    top: 65%;
+  }
+  .modal-error_phone {
+    top: 65%;
+  }
+  .modal-error_email {
+    top: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */

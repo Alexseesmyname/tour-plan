@@ -78,7 +78,7 @@ $(document).ready(function () {
         phone: {
           required: "Please enter your phone number",
           minlength:
-            "Your phone number must be in the format +7(999) 999-99-99",
+            "Your phone number must be in the format +7(999)\u00a0999-99-99",
         },
       },
     });
@@ -87,10 +87,21 @@ $(document).ready(function () {
   $('[type="tel"]').each(function () {
     $(this).mask("+7(999) 999-99-99");
   });
+
   $(".modal__input-group").on("DOMNodeInserted", function () {
     $(".modal__dialog").addClass("modal__dialog_error"),
       $(".modal__form").addClass("modal__form_error"),
       $(".modal__input").addClass("modal__input_error"),
       $(".modal__textarea").addClass("modal__textarea_error");
+    $("#name-error").addClass("modal-error_name");
+    $("#phone-error").addClass("modal-error_phone");
+    $("#email-error").addClass("modal-error_email");
+  });
+  $(".footer-contact__input-group").on("DOMNodeInserted", function () {
+    $("#name-error").addClass("footer-error_name");
+    $("#phone-error").addClass("footer-error_phone");
+  });
+  $(".subscribe").on("DOMNodeInserted", function () {
+    $("#email-error").addClass("newsletter-error_email");
   });
 });
