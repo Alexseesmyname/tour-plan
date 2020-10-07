@@ -104,4 +104,6 @@ $(document).ready(function () {
   $(".subscribe").on("DOMNodeInserted", function () {
     $("#email-error").addClass("newsletter-error_email");
   });
+
+  AOS.init();
 });
