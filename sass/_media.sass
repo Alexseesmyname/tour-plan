@@ -32,6 +32,12 @@
                 margin-left: 7%
                 &__input
                     width: 340px
+                &__button
+                    &:hover
+                        background-color: $primary
+            .user
+                &:hover
+                    text-decoration: none
     .navbar
         &-bottom
             .container
@@ -41,6 +47,8 @@
             &__link
                 font-size: 12px
                 line-height: 15px
+                &:hover
+                    text-decoration: none
     .hotel
         padding-bottom: 60px
         &-grid
@@ -53,6 +61,13 @@
             .booking-card
                 width: 340px
                 padding: 27px 22px
+                &__phone
+                    .number
+                        &:hover
+                            text-decoration: none
+                &__button
+                    &:hover
+                        background-color: $primary
             .map
                 width: 340px
     .packages
@@ -71,10 +86,18 @@
                 margin-bottom: 40px
             &__properties
                 margin-bottom: 40px
+        .content
+            &__button
+                &:hover
+                    background-color: $primary
     .newsletter
         &__wrapper
             width: 700px
             padding: 92px 0
+        .subscribe
+            &__button
+                &:hover
+                    background-color: $primary
     .reviews
         padding: 40px 0 60px
         &__title
@@ -105,6 +128,9 @@
             margin-bottom: 20px
             &__text
                 left: 27px
+            &__button
+                &:hover
+                    background-color: $primary
     .footer
         padding: 73px 0 33px
         &-top
@@ -133,6 +159,10 @@
             &__links
                 margin-left: -10px
                 margin-bottom: -5px
+            .list
+                .item__link
+                    &:hover
+                        text-decoration: none
             &__title
                 &_nm
                     width: 200px
@@ -146,12 +176,21 @@
             margin-bottom: 52px
             &__title
                 margin: 0 0 24px
+            &__link
+                &:hover
+                    text-decoration: none
             .form-title
                 margin-bottom: 34px
+            .form__button
+                &:hover
+                    background-color: $primary
         &-bottom
             grid-template-columns: 283px 1fr 1fr
             &__link-wrapper
                 grid-column: 1/2
+            &__link
+                &:hover
+                    text-decoration: none
     .modal
         &__dialog
             width: 400px
