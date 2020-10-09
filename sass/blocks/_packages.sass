@@ -42,10 +42,10 @@
             background-color: $primary
             border-radius: 0 4px 4px 0
         &__content
-            grid-template-rows: repeat(6, max-content)
+            display: flex
+            flex-direction: column
             padding: 46px 21px 30px 43px
             color: $color-w
-            overflow-y: auto
             .stars
                 margin-bottom: 6px
                 font-size: 0
@@ -58,9 +58,11 @@
         &__title
             margin: 0 0 29px
         &__description
+            height: 173px
             margin-bottom: 45px
             font-size: 14px
             line-height: 22px
+            overflow-y: auto
         &__properties
             margin: 0 0 40px
     &__wrapper
@@ -72,8 +74,8 @@
         height: 100%
         object-fit: cover
     &__content
-        display: grid
-        grid-template-rows: repeat(4, max-content)
+        display: flex
+        flex-direction: column
         padding: 30px 21px 25px 32px
         background-color: #0A223D
     .little-item
@@ -93,6 +95,9 @@
             margin: 0 0 23px
         &__properties
             margin-bottom: 24px
+        &__content
+            height: 250px
+            overflow-y: auto
     .content
         color: $color-w
         &__title
